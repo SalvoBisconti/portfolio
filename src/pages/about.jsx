@@ -10,7 +10,25 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <h2 className={styles.headerText}>ABOUT ME</h2>
+        <p>
+          Hi, my name is Salvatore, but I prefer to be called Salvo, I am a boy
+          of '98 and currently I live in the province of Palermo. I’m a jr
+          front-end developer specialized in React and in the Next framework .
+          I’ve always been passionate about technology since i was child. I
+          graduated in computer science and recently I got the qualification of
+          "front-end developer" after attending an intensive bootcamp in which I
+          learned a lot. Why do I like to program? I think creating something
+          from scratch is one of the greatest satisfactions that life can give
+          you. Michelangelo had his brush, I have my computer. I call myself a
+          very curious guy. I always need to learn new things. I think curiosity
+          is what pushes everything forward. If man had not been curious we
+          would still have been in the Stone Age.
+        </p>
+
+        <h3 className={styles.headerText}>SKILLS</h3>
+      </main>
     </>
   );
 }
