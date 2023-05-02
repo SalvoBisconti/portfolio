@@ -1,10 +1,11 @@
 import styles from "./index.module.scss";
 import Sidebar from "@/components/sidebar";
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   return (
     <div className={styles.MainLayout}>
       <Sidebar />
+      <main> {children} </main>
     </div>
   );
 };
