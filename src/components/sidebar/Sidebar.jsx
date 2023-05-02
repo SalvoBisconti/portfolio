@@ -9,7 +9,7 @@ import { RiFileListLine } from "react-icons/ri";
 const Sidebar = () => {
   return (
     <div className={styles.Sidebar}>
-      {/* <h1>SB</h1> */}
+      <h1 className={styles.logo}>SB</h1>
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <BiHomeCircle />
@@ -24,8 +24,10 @@ const Sidebar = () => {
           <span className={styles.textList}>My projects</span>
         </li>
         <li className={styles.listItem}>
-          <BsPerson />
-          <span className={styles.textList}>About me</span>
+          <Link href="../about">
+            <BsPerson />
+            <span className={styles.textList}>About me</span>
+          </Link>
         </li>
       </ul>
     </div>
