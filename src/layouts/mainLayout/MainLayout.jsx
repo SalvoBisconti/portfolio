@@ -5,7 +5,7 @@ const MainLayout = ({ children }) => {
   return (
     <div className={styles.MainLayout}>
       <Sidebar />
-      <main> {children} </main>
+      <main className={styles.main}> {children} </main>
     </div>
   );
 };

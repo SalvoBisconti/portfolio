@@ -12,16 +12,22 @@ const Sidebar = () => {
       <h1 className={styles.logo}>SB</h1>
       <ul className={styles.list}>
         <li className={styles.listItem}>
-          <BiHomeCircle />
-          <span className={styles.textList}>Home</span>
+          <Link href="../">
+            <BiHomeCircle />
+            <span className={styles.textList}>Home</span>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <RiFileListLine />
-          <span className={styles.textList}>Curriculum</span>
+          <Link href="../about">
+            <RiFileListLine />
+            <span className={styles.textList}>Curriculum</span>
+          </Link>
         </li>
         <li className={styles.listItem}>
-          <AiOutlineProject />
-          <span className={styles.textList}>My projects</span>
+          <Link href="../about">
+            <AiOutlineProject />
+            <span className={styles.textList}>My projects</span>
+          </Link>
         </li>
         <li className={styles.listItem}>
           <Link href="../about">

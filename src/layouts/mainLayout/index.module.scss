@@ -1,1 +1,19 @@
+.MainLayout {
+  .main {
+    height: 88vh;
+    margin: 10px;
+    overflow: scroll;
+    padding: 20px;
+  }
+}
 
+@media screen and (min-width: 800px) {
+  .MainLayout {
+    .main {
+      position: fixed;
+      right: 0;
+      height: 100vh;
+      width: 80vw;
+    }
+  }
+}

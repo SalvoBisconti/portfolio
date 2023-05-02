@@ -1,1 +1,64 @@
+.Home {
+  @include flex-container(column, center, center, 40px);
+  height: 100%;
 
+  .image {
+    border-radius: 100%;
+  }
+  .text {
+    .highlighted {
+      color: $secondary-color;
+    }
+
+    .list {
+      @include flex-container(row, center, center, 40px);
+      width: 100%;
+      list-style-type: none;
+      margin-top: 10px;
+
+      .listItem {
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0 0 2px rgb(172, 172, 172);
+        a {
+          color: $text-light;
+          text-decoration: none;
+          color: $secondary-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Home {
+    @include flex-container(row, center, center, 40px);
+    .image {
+      border-radius: 100%;
+    }
+    .text {
+      width: 50%;
+      font-size: 1.2rem;
+      .highlighted {
+        color: $secondary-color;
+      }
+
+      .list {
+        @include flex-container(row, center, center, 40px);
+        width: 100%;
+        list-style-type: none;
+        margin-top: 10px;
+
+        .listItem {
+          a {
+            color: $text-light;
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
