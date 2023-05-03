@@ -24,7 +24,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={styles.listItem}>
-          <Link href="../about">
+          <Link href="../projects">
             <AiOutlineProject />
             <span className={styles.textList}>My projects</span>
           </Link>

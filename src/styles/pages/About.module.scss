@@ -1,0 +1,23 @@
+.About {
+  @include flex-container(column, center, center, 40px);
+  .biography {
+    @include flex-container(column, center, center, 40px);
+
+    .image {
+      border-radius: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .About {
+    .biography {
+      @include flex-container(row, center, center, 40px);
+
+      .bioText {
+        font-size: 1.2rem;
+        width: 40vw;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "@/styles/pages/Home.module.scss";
-
+import Image from "next/image";
+import styles from "@/styles/pages/About.module.scss";
 import ItemList from "@/components/itemList";
 
 export default function About() {
@@ -12,25 +12,35 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.About}>
         <h2 className={styles.headerText}>ABOUT ME</h2>
-        <p>
-          Hi, my name is Salvatore, but I prefer to be called Salvo, I am a boy
-          of '98 and currently I live in the province of Palermo. I’m a jr
-          front-end developer specialized in React and in the Next framework .
-          I’ve always been passionate about technology since i was child. I
-          graduated in computer science and recently I got the qualification of
-          "front-end developer" after attending an intensive bootcamp in which I
-          learned a lot. Why do I like to program? I think creating something
-          from scratch is one of the greatest satisfactions that life can give
-          you. Michelangelo had his brush, I have my computer. I call myself a
-          very curious guy. I always need to learn new things. I think curiosity
-          is what pushes everything forward. If man had not been curious we
-          would still have been in the Stone Age.
-        </p>
 
-        <h3 className={styles.headerText}>SKILLS</h3>
-        <ItemList />
+        <div className={styles.biography}>
+          <Image
+            className={styles.image}
+            src="/image.png"
+            alt="myImage"
+            width={250}
+            height={250}
+          />
+          <p className={styles.bioText}>
+            Hi, my name is Salvatore, but I prefer to be called Salvo, I am a
+            boy of '98 and currently I live in the province of Palermo. I’m a jr
+            front-end developer specialized in React and in the Next framework .
+            I’ve always been passionate about technology since i was child. I
+            graduated in computer science and recently I got the qualification
+            of "front-end developer" after attending an intensive bootcamp in
+            which I learned a lot. Why do I like to program? I think creating
+            something from scratch is one of the greatest satisfactions that
+            life can give you. Michelangelo had his brush, I have my computer. I
+            call myself a very curious guy. I always need to learn new things. I
+            think curiosity is what pushes everything forward. If man had not
+            been curious we would still have been in the Stone Age.
+          </p>
+        </div>
+
+        <h3 className={styles.skillsText}>SKILLS SET</h3>
+        <ItemList type="skills" />
       </main>
     </>
   );
