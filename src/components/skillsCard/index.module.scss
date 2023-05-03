@@ -1,0 +1,25 @@
+.SkillsCard {
+  @include flex-container(column, center, center, 10px);
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  box-shadow: 0 0 1px black;
+  border-radius: 6px;
+  cursor: pointer;
+
+  .image {
+    width: 45%;
+  }
+  hr {
+    width: 100%;
+    background-color: $secondary-color;
+    border: none;
+    box-shadow: 0 0 6px $secondary-color;
+    position: absolute;
+    bottom: 0;
+  }
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

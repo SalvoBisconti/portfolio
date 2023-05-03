@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "@/styles/pages/Home.module.scss";
 
+import ItemList from "@/components/itemList";
+
 export default function About() {
   return (
     <>
@@ -28,6 +30,7 @@ export default function About() {
         </p>
 
         <h3 className={styles.headerText}>SKILLS</h3>
+        <ItemList />
       </main>
     </>
   );
