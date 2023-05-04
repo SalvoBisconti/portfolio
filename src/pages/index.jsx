@@ -22,13 +22,13 @@ export default function Home() {
         />
 
         <div className={styles.text}>
-          <p>
+          <p className={styles.firstText}>
             HI THERE <span className={styles.hand}>👋🏻</span> ! I'M
           </p>
-          <h2>
+          <h2 className={styles.secondText}>
             SALVATORE <span className={styles.highlighted}> BISCONTI</span>
           </h2>
-          <p>
+          <p className={styles.thirdText}>
             A <span className={styles.highlighted}>Front-end developer </span>
             passionate about creating interactive applications and experiences
             on the web

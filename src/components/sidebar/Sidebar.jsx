@@ -18,7 +18,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={styles.listItem}>
-          <Link href="../about">
+          <Link href="../curriculum">
             <RiFileListLine />
             <span className={styles.textList}>Curriculum</span>
           </Link>

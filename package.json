@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "css": "^3.0.0",
+    "file-saver": "^2.0.5",
     "modules": "^0.4.0",
     "next": "13.3.4",
     "react": "18.2.0",

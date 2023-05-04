@@ -1,0 +1,35 @@
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes top-appear {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes right-appear {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left-right {
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -3,7 +3,7 @@ import styles from "@/styles/pages/Projects.module.scss";
 
 import ItemList from "@/components/itemList";
 
-export default function About() {
+export default function Projects() {
   return (
     <>
       <Head>

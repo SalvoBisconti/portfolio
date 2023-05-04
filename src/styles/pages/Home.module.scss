@@ -5,19 +5,36 @@
   .image {
     transform: translateY(-1000px);
     border-radius: 100%;
-    animation: image-appear $mediumAnimation forwards;
+    animation: top-appear $mediumAnimation forwards;
     box-shadow: 8px 8px 8px $shadow;
   }
   .text {
-    transform: translateX(1000px);
-    animation: text-appear $mediumAnimation forwards 500ms;
-    p {
+    .firstText {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(30, end);
       .hand {
-        transform: rotate(3.142rad);
+        display: inline-block;
+        transform: rotate(-15deg);
+        animation: left-right $mediumAnimation alternate forwards;
       }
     }
-    .highlighted {
-      color: $secondary-color;
+    .secondText {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 3.5s steps(30, end);
+
+      .highlighted {
+        color: $secondary-color;
+      }
+    }
+    .thirdText {
+      transform: translateX(1000px);
+      animation: right-appear $mediumAnimation forwards 3400ms;
     }
 
     .list {
@@ -25,16 +42,26 @@
       width: 100%;
       list-style-type: none;
       margin-top: 10px;
+      transform: translateX(1000px);
+
+      animation: right-appear $mediumAnimation forwards 4400ms;
 
       .listItem {
-        padding: 5px;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 6px;
         background-color: white;
-        box-shadow: 0 0 2px rgb(172, 172, 172);
+        box-shadow: 0 0 2px $shadow;
         a {
           color: $text-light;
           text-decoration: none;
           color: $secondary-color;
           font-size: 1.5rem;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 2px $secondary-color;
         }
       }
     }
@@ -70,17 +97,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes image-appear {
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes text-appear {
-  100% {
-    transform: translateX(0);
   }
 }

@@ -22,7 +22,7 @@
           border-radius: 8px;
           background-color: lightcoral;
           transform: translateX(1000px);
-          animation: left-appear $mediumAnimation forwards 500ms;
+          animation: right-appear $mediumAnimation forwards 500ms;
           z-index: 2;
         }
         .square {
@@ -40,38 +40,28 @@
 
       .bioText {
         transform: translateX(1000px);
-        animation: left-appear $mediumAnimation forwards 1500ms;
+        animation: right-appear $mediumAnimation forwards 1500ms;
       }
     }
     .skillsArea {
       @include flex-container(column, center, center, 40px);
       transform: translateX(1500px);
-      animation: left-appear $mediumAnimation forwards 2500ms;
+      animation: right-appear $mediumAnimation forwards 2500ms;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .About {
-    .biography {
-      @include flex-container(row, center, center, 40px);
+    .container {
+      .biography {
+        @include flex-container(row, center, center, 40px);
 
-      .bioText {
-        font-size: 1.2rem;
-        width: 40vw;
+        .bioText {
+          font-size: 1.2rem;
+          width: 40vw;
+        }
       }
     }
-  }
-}
-
-@keyframes top-appear {
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes left-appear {
-  100% {
-    transform: translateX(0);
   }
 }
