@@ -5,7 +5,7 @@ const SkillsCard = ({ data }) => {
     <div className={styles.SkillsCard}>
       <img className={styles.image} src={data.image} alt={data.name} />
       <h4>{data.name}</h4>
-      <hr size="10" />
+      <hr size="10" className={styles.line} />
     </div>
   );
 };

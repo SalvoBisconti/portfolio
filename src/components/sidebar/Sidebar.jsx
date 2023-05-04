@@ -18,6 +18,12 @@ const Sidebar = () => {
           </Link>
         </li>
         <li className={styles.listItem}>
+          <Link href="../about">
+            <BsPerson />
+            <span className={styles.textList}>About me</span>
+          </Link>
+        </li>
+        <li className={styles.listItem}>
           <Link href="../curriculum">
             <RiFileListLine />
             <span className={styles.textList}>Curriculum</span>
@@ -26,13 +32,7 @@ const Sidebar = () => {
         <li className={styles.listItem}>
           <Link href="../projects">
             <AiOutlineProject />
-            <span className={styles.textList}>My projects</span>
-          </Link>
-        </li>
-        <li className={styles.listItem}>
-          <Link href="../about">
-            <BsPerson />
-            <span className={styles.textList}>About me</span>
+            <span className={styles.textList}>Projects</span>
           </Link>
         </li>
       </ul>

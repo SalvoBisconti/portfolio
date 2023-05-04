@@ -9,7 +9,7 @@
     background-color: $secondary-color;
     z-index: -1;
   }
-  hr {
+  .hl {
     position: absolute;
     top: 2%;
     right: 0;
@@ -28,7 +28,7 @@
     .line {
       height: 100%;
     }
-    hr {
+    .hl {
       width: 80%;
     }
 
