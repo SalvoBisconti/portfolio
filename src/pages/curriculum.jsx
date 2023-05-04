@@ -4,8 +4,16 @@ import Image from "next/image";
 
 import { RiDownload2Fill } from "react-icons/ri";
 import { saveFile } from "@/utils/func";
+import { useDispatch } from "react-redux";
+
+import { useEffect } from "react";
+import { selectIcon } from "@/store";
 
 export default function Curriculum() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(selectIcon("curriculum"));
+  }, []);
   return (
     <>
       <Head>

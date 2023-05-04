@@ -23,6 +23,10 @@
       a {
         color: $text-light;
         text-decoration: none;
+        .iconSelected {
+          fill: $text-light;
+          font-size: 2.2rem;
+        }
       }
     }
 
