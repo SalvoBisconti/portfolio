@@ -43,8 +43,10 @@ export default function About() {
           </p>
         </div>
 
-        <h3 className={styles.skillsText}>SKILLS SET</h3>
-        <ItemList type="skills" />
+        <div className={styles.skillsArea}>
+          <h3 className={styles.skillsText}> MY SKILLS SET</h3>
+          <ItemList type="skills" />
+        </div>
       </main>
     </>
   );

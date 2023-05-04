@@ -22,7 +22,9 @@ export default function Home() {
         />
 
         <div className={styles.text}>
-          <p> HI THERE! I'M</p>
+          <p>
+            HI THERE <span className={styles.hand}>👋🏻</span> ! I'M
+          </p>
           <h2>
             SALVATORE <span className={styles.highlighted}> BISCONTI</span>
           </h2>

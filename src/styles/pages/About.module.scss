@@ -15,8 +15,11 @@
         position: absolute;
         top: 20px;
         left: 20px;
-        background-color: lightcoral;
         border-radius: 8px;
+        background-color: lightcoral;
+        transform: translateX(1000px);
+        animation: left-appear $mediumAnimation forwards 500ms;
+        z-index: 2;
       }
       .square {
         top: 20px;
@@ -26,8 +29,20 @@
         border: 3px solid $secondary-color;
         border-radius: 8px;
         background-color: rgba(183, 45, 45, 0.15);
+        transform: translateY(-1000px);
+        animation: top-appear $mediumAnimation forwards;
       }
     }
+
+    .bioText {
+      transform: translateX(1000px);
+      animation: left-appear $mediumAnimation forwards 1500ms;
+    }
+  }
+  .skillsArea {
+    @include flex-container(column, center, center, 40px);
+    transform: translateX(1500px);
+    animation: left-appear $mediumAnimation forwards 2500ms;
   }
 }
 
@@ -41,5 +56,17 @@
         width: 40vw;
       }
     }
+  }
+}
+
+@keyframes top-appear {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes left-appear {
+  100% {
+    transform: translateX(0);
   }
 }

@@ -3,9 +3,18 @@
   height: 100%;
 
   .image {
+    transform: translateY(-1000px);
     border-radius: 100%;
+    animation: image-appear $mediumAnimation forwards;
   }
   .text {
+    transform: translateX(1000px);
+    animation: text-appear $mediumAnimation forwards 500ms;
+    p {
+      .hand {
+        transform: rotate(3.142rad);
+      }
+    }
     .highlighted {
       color: $secondary-color;
     }
@@ -60,5 +69,17 @@
         }
       }
     }
+  }
+}
+
+@keyframes image-appear {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text-appear {
+  100% {
+    transform: translateX(0);
   }
 }
