@@ -40,4 +40,9 @@ export const skills = [
     name: "GITHUB",
     image: "/icons/github.png",
   },
+  {
+    id: 9,
+    name: "REDUX",
+    image: "/icons/redux.png",
+  },
 ];

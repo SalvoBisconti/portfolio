@@ -1,10 +1,10 @@
 import styles from "./index.module.scss";
-import Sidebar from "@/components/sidebar";
+import Navbar from "@/components/navbar";
 
 const MainLayout = ({ children }) => {
   return (
     <div className={styles.MainLayout}>
-      <Sidebar />
+      <Navbar />
       <hr className={styles.hl} />
       <div className={styles.line}></div>
       <main className={styles.main}> {children} </main>

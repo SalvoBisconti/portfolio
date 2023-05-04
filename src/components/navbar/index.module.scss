@@ -1,4 +1,4 @@
-.Sidebar {
+.Navbar {
   height: 50px;
   width: 80vw;
   background-color: $secondary-color;
@@ -20,13 +20,24 @@
     font-size: 1.9rem;
 
     .listItem {
+      .iconSelected {
+        background: linear-gradient(
+          180deg,
+          $primary-color 60%,
+          rgba(255, 255, 255, 0.43) 85%
+        );
+        border-radius: 6px;
+        font-size: 2.1rem;
+        padding: 2px;
+        font-weight: bold;
+      }
       a {
         color: $text-light;
         text-decoration: none;
-        .iconSelected {
-          fill: $text-light;
-          font-size: 2.2rem;
-        }
+      }
+      .iconSelected {
+        font-size: 2.2rem;
+        color: $secondary-color;
       }
     }
 
@@ -37,7 +48,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .Sidebar {
+  .Navbar {
     height: 100vh;
     width: 20vw;
     max-width: 250px;
@@ -61,6 +72,16 @@
       font-size: 1.9rem;
 
       .listItem {
+        width: 100%;
+
+        .iconSelected {
+          width: 100%;
+          background: linear-gradient(
+            66deg,
+            $primary-color 60%,
+            rgba(255, 255, 255, 0.43) 85%
+          );
+        }
         @include flex-container(row, flex-start, flex-start, 10px);
         a {
           @include flex-container(row, flex-start, flex-start, 10px);

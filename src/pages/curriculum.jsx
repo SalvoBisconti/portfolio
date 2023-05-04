@@ -28,7 +28,7 @@ export default function Curriculum() {
           <div className={styles.image}>
             <Image
               className={styles.image}
-              src="/curriculum.png"
+              src="/curriculum-screen.png"
               alt="coding"
               width="0"
               height="0"

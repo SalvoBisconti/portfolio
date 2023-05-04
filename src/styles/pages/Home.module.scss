@@ -18,7 +18,7 @@
       .hand {
         display: inline-block;
         transform: rotate(-15deg);
-        animation: left-right $mediumAnimation alternate forwards;
+        animation: left-right $mediumAnimation alternate infinite;
       }
     }
     .secondText {
