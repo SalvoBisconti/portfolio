@@ -46,7 +46,7 @@ export default function About() {
           </div>
 
           <div className={styles.skillsArea}>
-            <h3 className={styles.skillsText}> MY SKILLS SET</h3>
+            <h3 className={styles.skillsText}>SKILLS SET</h3>
             <ItemList type="skills" />
           </div>
         </div>

@@ -1,6 +1,21 @@
 .MainLayout {
   overflow: hidden;
 
+  .line {
+    position: absolute;
+    right: 3%;
+    height: 90%;
+    width: 5px;
+    background-color: $secondary-color;
+    z-index: -1;
+  }
+  hr {
+    position: absolute;
+    top: 2%;
+    right: 0;
+    width: 90%;
+    border: 2px solid $secondary-color;
+  }
   .main {
     height: 88vh;
     margin: 10px;
@@ -10,6 +25,13 @@
 
 @media screen and (min-width: 800px) {
   .MainLayout {
+    .line {
+      height: 100%;
+    }
+    hr {
+      width: 80%;
+    }
+
     .main {
       position: fixed;
       right: 0;
