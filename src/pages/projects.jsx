@@ -13,8 +13,10 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.Projects}>
-        <h2 className={styles.headerText}>MY PROJECTS</h2>
-        <ItemList type="project" />
+        <div className={styles.container}>
+          <h2 className={styles.headerText}>MY PROJECTS</h2>
+          <ItemList type="project" />
+        </div>
       </main>
     </>
   );

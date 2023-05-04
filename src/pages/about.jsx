@@ -13,39 +13,42 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.About}>
-        <h2 className={styles.headerText}>ABOUT ME</h2>
+        <div className={styles.container}>
+          <h2 className={styles.headerText}>ABOUT ME</h2>
 
-        <div className={styles.biography}>
-          <div className={styles.image}>
-            <Image
-              className={styles.photo}
-              src="/image.png"
-              alt="myImage"
-              width={250}
-              height={250}
-            />
-            <div className={styles.square}></div>
+          <div className={styles.biography}>
+            <div className={styles.image}>
+              <Image
+                className={styles.photo}
+                src="/image.png"
+                alt="myImage"
+                width={250}
+                height={250}
+              />
+              <div className={styles.square}></div>
+            </div>
+
+            <p className={styles.bioText}>
+              Hi, my name is Salvatore, but I prefer to be called Salvo, I am a
+              boy of '98 and currently I live in the province of Palermo. I’m a
+              jr front-end developer specialized in React and in the Next
+              framework . I’ve always been passionate about technology since i
+              was child. I graduated in computer science and recently I got the
+              qualification of "front-end developer" after attending an
+              intensive bootcamp in which I learned a lot. Why do I like to
+              program? I think creating something from scratch is one of the
+              greatest satisfactions that life can give you. Michelangelo had
+              his brush, I have my computer. I call myself a very curious guy. I
+              always need to learn new things. I think curiosity is what pushes
+              everything forward. If man had not been curious we would still
+              have been in the Stone Age.
+            </p>
           </div>
 
-          <p className={styles.bioText}>
-            Hi, my name is Salvatore, but I prefer to be called Salvo, I am a
-            boy of '98 and currently I live in the province of Palermo. I’m a jr
-            front-end developer specialized in React and in the Next framework .
-            I’ve always been passionate about technology since i was child. I
-            graduated in computer science and recently I got the qualification
-            of "front-end developer" after attending an intensive bootcamp in
-            which I learned a lot. Why do I like to program? I think creating
-            something from scratch is one of the greatest satisfactions that
-            life can give you. Michelangelo had his brush, I have my computer. I
-            call myself a very curious guy. I always need to learn new things. I
-            think curiosity is what pushes everything forward. If man had not
-            been curious we would still have been in the Stone Age.
-          </p>
-        </div>
-
-        <div className={styles.skillsArea}>
-          <h3 className={styles.skillsText}> MY SKILLS SET</h3>
-          <ItemList type="skills" />
+          <div className={styles.skillsArea}>
+            <h3 className={styles.skillsText}> MY SKILLS SET</h3>
+            <ItemList type="skills" />
+          </div>
         </div>
       </main>
     </>

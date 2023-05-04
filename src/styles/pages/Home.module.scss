@@ -6,6 +6,7 @@
     transform: translateY(-1000px);
     border-radius: 100%;
     animation: image-appear $mediumAnimation forwards;
+    box-shadow: 8px 8px 8px $shadow;
   }
   .text {
     transform: translateX(1000px);

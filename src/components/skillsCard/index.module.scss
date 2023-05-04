@@ -4,7 +4,7 @@
   height: 150px;
   width: 150px;
   background-color: white;
-  box-shadow: 0 0 1px grey;
+  box-shadow: 0 0 1px $shadow;
   border-radius: 6px;
   cursor: pointer;
   transition: $fastAnimation ease-in-out;

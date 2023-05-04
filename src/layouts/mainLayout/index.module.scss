@@ -1,8 +1,9 @@
 .MainLayout {
+  overflow: hidden;
+
   .main {
     height: 88vh;
     margin: 10px;
-    overflow: scroll;
     padding: 20px;
   }
 }
