@@ -2,8 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/pages/About.module.scss";
 import ItemList from "@/components/itemList";
+import { useDispatch } from "react-redux";
+
+import { useEffect } from "react";
+import { selectIcon } from "@/store";
 
 export default function About() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(selectIcon("about"));
+  }, []);
   return (
     <>
       <Head>

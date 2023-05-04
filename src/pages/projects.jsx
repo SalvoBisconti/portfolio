@@ -2,8 +2,16 @@ import Head from "next/head";
 import styles from "@/styles/pages/Projects.module.scss";
 
 import ItemList from "@/components/itemList";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { selectIcon } from "@/store";
 
 export default function Projects() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(selectIcon("projects"));
+  }, []);
   return (
     <>
       <Head>

@@ -3,7 +3,16 @@ import styles from "@/styles/pages/Home.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+
+import { useEffect } from "react";
+import { selectIcon } from "@/store";
+
 export default function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(selectIcon("home"));
+  }, []);
   return (
     <>
       <Head>
