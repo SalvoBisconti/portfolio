@@ -37,11 +37,11 @@ export default function About() {
             </div>
 
             <p className={styles.bioText}>
-              Hi, my name is Salvatore, but I prefer to be called Salvo, I am a
-              boy of '98 and currently I live in the province of Palermo. I’m a
-              jr front-end developer specialized in React and in the Next
-              framework . I’ve always been passionate about technology since i
-              was child. I graduated in computer science and recently I got the
+              My name is Salvatore, but I prefer to be called Salvo, I am a boy
+              of '98 and currently I live in the province of Palermo. I’m a jr
+              front-end developer specialized in React and in the Next framework
+              . I’ve always been passionate about technology since i was child.
+              I graduated in computer science and recently I got the
               qualification of "front-end developer" after attending an
               intensive bootcamp in which I learned a lot. Why do I like to
               program? I think creating something from scratch is one of the
