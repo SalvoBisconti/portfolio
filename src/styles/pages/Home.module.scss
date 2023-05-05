@@ -4,12 +4,12 @@
 
   .imageContainer {
     width: 70vw;
-
+    transform: translateY(-1000px);
+    border-radius: 100%;
+    animation: top-appear $mediumAnimation forwards;
     .image {
-      transform: translateY(-1000px);
-      border-radius: 100%;
-      animation: top-appear $mediumAnimation forwards;
       box-shadow: 8px 8px 8px $shadow;
+      border-radius: 100%;
     }
   }
   .text {
