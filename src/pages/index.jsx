@@ -22,13 +22,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.Home}>
-        <Image
+        {/* <Image
           className={styles.image}
           src="/coding.gif"
           alt="coding"
           width={300}
           height={300}
-        />
+        /> */}
+        <div className={styles.imageContainer}>
+          <Image
+            className={styles.image}
+            src="/coding.gif"
+            alt="coding"
+            width="0"
+            height="0"
+            sizes="100vw"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
 
         <div className={styles.text}>
           <p className={styles.firstText}>

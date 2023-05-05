@@ -27,7 +27,6 @@ export default function Curriculum() {
           <h2 className={styles.headerText}>CURRICULUM</h2>
           <div className={styles.image}>
             <Image
-              className={styles.image}
               src="/curriculum-screen.png"
               alt="coding"
               width="0"

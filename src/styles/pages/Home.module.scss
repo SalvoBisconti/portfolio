@@ -2,11 +2,15 @@
   @include flex-container(column, center, center, 40px);
   height: 100%;
 
-  .image {
-    transform: translateY(-1000px);
-    border-radius: 100%;
-    animation: top-appear $mediumAnimation forwards;
-    box-shadow: 8px 8px 8px $shadow;
+  .imageContainer {
+    width: 70vw;
+
+    .image {
+      transform: translateY(-1000px);
+      border-radius: 100%;
+      animation: top-appear $mediumAnimation forwards;
+      box-shadow: 8px 8px 8px $shadow;
+    }
   }
   .text {
     .firstText {
@@ -71,8 +75,8 @@
 @media screen and (min-width: 768px) {
   .Home {
     @include flex-container(row, center, center, 40px);
-    .image {
-      border-radius: 100%;
+    .imageContainer {
+      width: 30vw;
     }
     .text {
       width: 50%;
