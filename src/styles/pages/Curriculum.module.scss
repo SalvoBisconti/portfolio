@@ -1,6 +1,6 @@
 .Curriculum {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 
   .container {
     @include flex-container(column, center, center, 40px);
