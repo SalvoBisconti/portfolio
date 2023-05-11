@@ -45,4 +45,9 @@ export const skills = [
     name: "REDUX",
     image: "/icons/redux.png",
   },
+  {
+    id: 10,
+    name: "TYPESCRIPT",
+    image: "/icons/typescript.png",
+  },
 ];
